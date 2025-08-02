@@ -17,6 +17,7 @@ app.config['SECRET_KEY'] = 'your-secret-key-here'
 # Enable CORS for frontend integration (all origins for development, specific for production)
 CORS(app, origins=[
     "http://localhost:5173",  # Vite dev server
+    "http://localhost:8080",
     "http://localhost:3000",  # React dev server
     "http://localhost:4000",  # Alternative frontend port
     "https://*.railway.app",  # Railway production URLs
